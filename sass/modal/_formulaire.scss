@@ -1,0 +1,124 @@
+.masque {
+  position: fixed;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+
+  .modal {
+    max-width: 640px;
+    width: 100%;
+    padding: 30px 20px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('./images/formulaire/formulaire.png');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    color: white;
+
+    @media screen and(min-width:992px){
+      background-image: url('./images/section-2/digital-bis-desk.png');
+      background-position: 20% center;
+      max-width: 90%;
+    }
+    // overflow-y: scroll;
+
+    .close {
+      text-align: right;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 30px;
+      img{
+        width: 30px;
+      }
+    }
+
+h2{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrap-form{
+  // height: 700px;
+  // overflow-y: scroll;
+  @media screen and(min-width:992px) {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1180px;
+      margin: 0 auto;
+
+      &>div{
+        margin: 0 auto;
+      }
+  }
+
+
+}
+
+    form{
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-end;
+      align-items: flex-end;
+       font-family: $hindMedium;
+
+       @media screen and(min-width:992px){
+         width: 50%;
+       }
+
+       &>div{
+       margin: 0 auto 30px;
+@media screen and(min-width:992px) {
+  margin: 0 15% 30px;
+}
+       }
+      input{
+        display: inline-block;
+        max-width: 420px;
+      // width: 220px;
+      height: 30px;
+      border-radius:8px;
+      margin-bottom: 20px;
+      width: 80%;
+      padding-left: 15px;
+      font-family: $hindMedium;
+      font-size: 13px;
+      border: none;
+
+
+      &::placeholder{
+font-family: $hindLight;
+font-size: 13px;
+color: $gris;
+opacity: 1;
+      }
+      }
+
+      input[type=submit]{
+        width: 150px;
+        color: white;
+        margin-top: 35px;
+
+        @media screen and(min-width:992px){
+          margin: 35px 20% 20px;
+        }
+
+      }
+    }
+
+  }
+}
+
+.closeModal {
+  display: none;
+}

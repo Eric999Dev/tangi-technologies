@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+
+h1, h2,h3{
+  font-family: $sysBold;
+}
+
+p{
+  font-family: $hindMedium;
+}
+// Boutons
+
+button{
+  border: none;
+}
+
+.btn{
+// width: 124px;
+background: $orange 0% 0% no-repeat padding-box;
+// border: 1px solid $rouge;
+border-radius: 8px;
+color: white;
+font-family: $hindBold;
+// padding: 0 10px;
+padding: 5px 10px;
+}
+
+
+
+.show400 {
+  display: none;
+}
+
+@media screen and(min-width:400px){
+.show400 {
+  display: inline;
+}
+}
+
+
+// .content-site{
+//   max-width: 1910px;
+//   width: 100%;
+//   margin: 0 auto;
+// }
