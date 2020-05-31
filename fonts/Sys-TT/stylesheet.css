@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'SysTT Bold';
+    src: url('SysTTW00-Bold.eot');
+    src: url('SysTTW00-Bold.eot?#iefix') format('embedded-opentype'),
+        url('SysTTW00-Bold.woff2') format('woff2'),
+        url('SysTTW00-Bold.woff') format('woff'),
+        url('SysTTW00-Bold.ttf') format('truetype'),
+        url('SysTTW00-Bold.svg#SysTTW00-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
