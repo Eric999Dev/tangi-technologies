@@ -44,19 +44,30 @@ $('.burger').addClass('open-burger');
 // Scroll to element
 
   $('.accueil').click(function () {
+
       $('html, body').animate({
         scrollTop: $("#accueil").offset().top
-      }, 1000)
+      }, 1000);
+      $('.accueil>a').addClass('under');
+      $('.agence>a').removeClass('under');
+      $('.tarif>a').removeClass('under');
     }),
     $('.agence').click(function () {
       $('html, body').animate({
         scrollTop: $("#agence").offset().top
-      }, 1000)
+      }, 1000);
+      $('.agence>a').addClass('under');
+       $('.accueil>a').removeClass('under');
+       $('.tarif>a').removeClass('under');
+
     }),
     $('.tarif').click(function () {
       $('html, body').animate({
         scrollTop: $("#tarif").offset().top
-      }, 1000)
+      }, 1000);
+      $('.tarif>a').addClass('under');
+        $('.agence>a').removeClass('under');
+        $('.accueil>a').removeClass('under');
     })
 
 // Modal Formulaire
