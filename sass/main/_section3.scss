@@ -4,55 +4,111 @@
 
     max-width: 1150px;
     margin: 0 auto;
+    padding: 40px 15px;
 
-    @media screen and(min-width:835px){
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-around;
-      align-items: flex-start;
-      padding: 0 15px;
-    }
- &>div {
-   text-align: center;
-   padding: 30px 0;
-  color: $gris;
-  @media screen and(min-width:835px) {
-    height: 395px;
-    position: relative;
+@media screen and(min-width:1160px) {
+padding: 80px 0px;
+
+}
+
+      h2 {
+        color: $bleuPrix;
+        padding: 0px 0px 40px;
+        font-size: 30px;
+        text-align: center;
+
+
+        @media screen and(min-width:875px) {
+
+          font-size: 40px;
+        }
+
+      }
+
+      .wrap-prix{
+
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+  @media screen and(min-width:1150px) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
   }
-   img{
-     height: auto;
-      width: 50px;
-      margin-bottom: 20px;
-   }
+      }
 
-   h3{
-     padding-bottom: 15px;
-   }
+        .vignette-prix {
+          text-align: center;
+          padding: 30px 1%;
+          color: $gris;
+          border: 1px solid $gris;
+          border-radius: 8px;
+          transition: all 125ms ease-in-out;
+          width: 100%;
+          max-width: 400px;
+          height: 395px;
+          position: relative;
+          margin: 0 auto;
 
-   p{
-     font-size: 16px;
-     font-family: $hindRegular;
-     strong{
-       font-family: $hindBold;
-     }
-   }
+          &:hover {
+            border: 2px solid $bleuPrix;
+            box-shadow: 5px 5px 5px $bleuPrix;
+          }
 
-   a{
-     margin-top: 15px;
-     display: inline-block;
+          @media screen and(min-width:768px) {
+            max-width: 350px;
+          }
 
-     @media screen and(min-width:835px) {
-       position: absolute;
-       bottom: 0;
-       width: 100%;
-       bottom: 5%;
-       left: 50%;
-       /* à 50%/50% du parent référent */
-       transform: translate(-50%, -50%);
-     }
-   }
- }
+          @media screen and(min-width:992px) {
+            max-width: 300px;
+          }
+
+          @media screen and(min-width:1150px) {
+            width: 250px;
+            margin-right: 10px;
+          }
+
+          img {
+            height: auto;
+            width: 50px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+          }
+
+          h3 {
+            padding-bottom: 15px;
+          }
+
+          p {
+            font-size: 16px;
+            font-family: $hindRegular;
+
+            strong {
+              font-family: $hindBold;
+            }
+          }
+
+          a {
+            margin-top: 15px;
+            display: inline-block;
+            max-width: 140px;
+             position: absolute;
+             bottom: 0;
+             width: 100%;
+             bottom: 5%;
+             left: 50%;
+             /* à 50%/50% du parent référent */
+             transform: translate(-50%, -50%);
+          }
+        }
+
+        &>div:last-of-type {
+          @media screen and(min-width:1150px) {
+            margin-right: 0;
+          }
+        }
+
   }
 
 }

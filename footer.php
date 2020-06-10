@@ -29,9 +29,9 @@
 
 			<div class="middle-footer">
 
-				<div><a href="">Mentions légales</a></div>
-				<div><a href="">Conditions générales de vente</a></div>
-				<div><a href="">Politique de confidentialité et cookies</a></div>
+				<p><a href="">Mentions légales</a></p>
+				<p><a href="">Conditions générales de vente</a></p>
+				<p><a href="">Politique de confidentialité et cookies</a></p>
 
 			</div>
 			<div class="bottom-footer">

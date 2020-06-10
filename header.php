@@ -66,9 +66,9 @@
 
 			<div class="wrap-nav">
 				<nav>
-					<button class="accueil" data-scroll="accueil">Accueil</button>
-					<button data-scroll="agence" class="agence">Agence digitale</button>
-					<button data-scroll="tarif" class="tarif">Nos tarifs</button>
+					<button class="accueil" data-scroll="accueil"><span>Accueil</span></button>
+					<button data-scroll="agence" class="agence"><span>Agence digitale</span></button>
+					<button data-scroll="tarif" class="tarif"><span>Nos tarifs</span></button>
 				</nav>
 			</div>
 

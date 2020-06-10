@@ -30,6 +30,9 @@ button {
   font-family: "Hind Bold", sans-serif;
   padding: 5px 10px; }
 
+.btn:hover {
+  cursor: pointer; }
+
 .show400 {
   display: none; }
 
@@ -50,9 +53,10 @@ button {
   .masque .modal {
     max-width: 640px;
     width: 100%;
+    height: 725px;
     padding: 30px 20px;
     position: absolute;
-    top: 45%;
+    top: 70%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -198,6 +202,69 @@ button {
         z-index: 5;
         -webkit-box-shadow: 0px 8px 15px -3px #8f8f8f;
         box-shadow: 0px 8px 15px -3px #8f8f8f; } }
+  .top-header .btn {
+    margin-right: 15px;
+    width: 65px;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    text-transform: capitalize; }
+    @media screen and (min-width: 400px) {
+      .top-header .btn {
+        width: 100%;
+        max-width: 130px;
+        margin-right: 0;
+        text-transform: initial; } }
+    @media screen and (min-width: 768px) {
+      .top-header .btn {
+        max-width: 150px; } }
+    @media screen and (min-width: 992px) {
+      .top-header .btn {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3; } }
+  .top-header .burger {
+    position: relative;
+    width: 50px;
+    height: 25px; }
+    .top-header .burger > div {
+      position: absolute;
+      -webkit-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      height: 5px; }
+    .top-header .burger > div:nth-child(1) {
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateY(0%) translateX(-50%) rotate(0deg);
+      -ms-transform: translateY(0%) translateX(-50%) rotate(0deg);
+      transform: translateY(0%) translateX(-50%) rotate(0deg); }
+    .top-header .burger > div:nth-child(2) {
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateY(-50%) translateX(-50%) rotate(0deg);
+      -ms-transform: translateY(-50%) translateX(-50%) rotate(0deg);
+      transform: translateY(-50%) translateX(-50%) rotate(0deg); }
+    .top-header .burger > div:nth-child(3) {
+      top: 100%;
+      left: 50%;
+      -webkit-transform: translateY(-100%) translateX(-50%) rotate(0deg);
+      -ms-transform: translateY(-100%) translateX(-50%) rotate(0deg);
+      transform: translateY(-100%) translateX(-50%) rotate(0deg); }
+    .top-header .burger.open-burger > div:nth-child(1) {
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateY(-50%) translateX(-50%) rotate(45deg);
+      -ms-transform: translateY(-50%) translateX(-50%) rotate(45deg);
+      transform: translateY(-50%) translateX(-50%) rotate(45deg); }
+    .top-header .burger.open-burger > div:nth-child(2) {
+      opacity: 0; }
+    .top-header .burger.open-burger > div:nth-child(3) {
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+      -ms-transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+      transform: translateY(-50%) translateX(-50%) rotate(-45deg); }
 
 .logo {
   background-image: url("./images/logo/logo_tangi_technologies_xs.png");
@@ -219,28 +286,6 @@ button {
       height: 70px;
       background-size: contain;
       width: 360px; } }
-
-.btn {
-  margin-right: 15px;
-  width: 65px;
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  order: 2;
-  text-transform: capitalize; }
-  @media screen and (min-width: 400px) {
-    .btn {
-      width: 100%;
-      max-width: 130px;
-      margin-right: 0;
-      text-transform: initial; } }
-  @media screen and (min-width: 768px) {
-    .btn {
-      max-width: 150px; } }
-  @media screen and (min-width: 992px) {
-    .btn {
-      -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-      order: 3; } }
 
 .wrap-nav {
   display: -webkit-box;
@@ -315,6 +360,34 @@ nav {
     margin-bottom: 15px;
     font-family: "Hind Medium", sans-serif;
     color: #707070; }
+    nav > button span {
+      position: relative; }
+    nav > button span::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: #1479B6;
+      -webkit-transform-origin: bottom right;
+      -ms-transform-origin: bottom right;
+      transform-origin: bottom right;
+      -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: -webkit-transform 0.5s ease;
+      transition: -webkit-transform 0.5s ease;
+      -o-transition: transform 0.5s ease;
+      transition: transform 0.5s ease;
+      transition: transform 0.5s ease, -webkit-transform 0.5s ease; }
+    nav > button span:hover::before {
+      -webkit-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+      transform-origin: bottom left;
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1); }
     @media screen and (min-width: 992px) {
       nav > button {
         width: 160px;
@@ -531,55 +604,93 @@ header {
 
 .section3 .content-section {
   max-width: 1150px;
-  margin: 0 auto; }
-  @media screen and (min-width: 835px) {
+  margin: 0 auto;
+  padding: 40px 15px; }
+  @media screen and (min-width: 1160px) {
     .section3 .content-section {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-      flex-flow: row nowrap;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      -webkit-box-align: start;
-      -ms-flex-align: start;
-      align-items: flex-start;
-      padding: 0 15px; } }
-  .section3 .content-section > div {
+      padding: 80px 0px; } }
+  .section3 .content-section h2 {
+    color: #0E588C;
+    padding: 0px 0px 40px;
+    font-size: 30px;
+    text-align: center; }
+    @media screen and (min-width: 875px) {
+      .section3 .content-section h2 {
+        font-size: 40px; } }
+  .section3 .content-section .wrap-prix {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+    @media screen and (min-width: 1150px) {
+      .section3 .content-section .wrap-prix {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start; } }
+  .section3 .content-section .vignette-prix {
     text-align: center;
-    padding: 30px 0;
-    color: #707070; }
-    @media screen and (min-width: 835px) {
-      .section3 .content-section > div {
-        height: 395px;
-        position: relative; } }
-    .section3 .content-section > div img {
+    padding: 30px 1%;
+    color: #707070;
+    border: 1px solid #707070;
+    border-radius: 8px;
+    -webkit-transition: all 125ms ease-in-out;
+    -o-transition: all 125ms ease-in-out;
+    transition: all 125ms ease-in-out;
+    width: 100%;
+    max-width: 400px;
+    height: 395px;
+    position: relative;
+    margin: 0 auto; }
+    .section3 .content-section .vignette-prix:hover {
+      border: 2px solid #0E588C;
+      -webkit-box-shadow: 5px 5px 5px #0E588C;
+      box-shadow: 5px 5px 5px #0E588C; }
+    @media screen and (min-width: 768px) {
+      .section3 .content-section .vignette-prix {
+        max-width: 350px; } }
+    @media screen and (min-width: 992px) {
+      .section3 .content-section .vignette-prix {
+        max-width: 300px; } }
+    @media screen and (min-width: 1150px) {
+      .section3 .content-section .vignette-prix {
+        width: 250px;
+        margin-right: 10px; } }
+    .section3 .content-section .vignette-prix img {
       height: auto;
       width: 50px;
+      margin: 0 auto;
       margin-bottom: 20px; }
-    .section3 .content-section > div h3 {
+    .section3 .content-section .vignette-prix h3 {
       padding-bottom: 15px; }
-    .section3 .content-section > div p {
+    .section3 .content-section .vignette-prix p {
       font-size: 16px;
       font-family: "Hind Regular", sans-serif; }
-      .section3 .content-section > div p strong {
+      .section3 .content-section .vignette-prix p strong {
         font-family: "Hind Bold", sans-serif; }
-    .section3 .content-section > div a {
+    .section3 .content-section .vignette-prix a {
       margin-top: 15px;
-      display: inline-block; }
-      @media screen and (min-width: 835px) {
-        .section3 .content-section > div a {
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-          bottom: 5%;
-          left: 50%;
-          /* à 50%/50% du parent référent */
-          -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); } }
+      display: inline-block;
+      max-width: 140px;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      bottom: 5%;
+      left: 50%;
+      /* à 50%/50% du parent référent */
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  @media screen and (min-width: 1150px) {
+    .section3 .content-section > div:last-of-type {
+      margin-right: 0; } }
 
 footer {
   background-color: #62B9E5;
@@ -617,7 +728,7 @@ footer {
       -webkit-box-align: start;
       -ms-flex-align: start;
       align-items: flex-start; } }
-  footer .middle-footer div > a {
+  footer .middle-footer p > a {
     font-family: "Hind Regular", sans-serif;
     color: white;
     text-transform: none;
