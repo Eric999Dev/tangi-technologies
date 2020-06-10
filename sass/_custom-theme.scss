@@ -1,28 +1,35 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
 
-h1, h2,h3{
+
+h1,
+h2,
+h3 {
   font-family: $sysBold;
 }
 
-p{
+p {
   font-family: $hindMedium;
 }
+
 // Boutons
 
-.btn{
-// width: 124px;
-background: $orange 0% 0% no-repeat padding-box;
-// border: 1px solid $rouge;
-border-radius: 8px;
-color: white;
-font-family: $hindBold;
-// padding: 0 10px;
-padding: 5px 10px;
+.btn {
+  // width: 124px;
+  background: $orange 0% 0% no-repeat padding-box;
+  // border: 1px solid $rouge;
+  border-radius: 8px;
+  color: white;
+  font-family: $hindBold;
+  // padding: 0 10px;
+  padding: 5px 10px;
 }
 
 // .content-site{
