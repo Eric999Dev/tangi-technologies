@@ -16,6 +16,12 @@ h1, h2,h3{
 p{
   font-family: $hindMedium;
 }
+
+a{
+
+  text-decoration: none;
+  color: inherit;
+}
 // Boutons
 
 button{
@@ -28,16 +34,12 @@ background: $orange 0% 0% no-repeat padding-box;
 border-radius: 8px;
 color: white;
 font-family: $hindBold;
-
 padding: 5px 10px;
 }
 
 .btn:hover {
   cursor: pointer;
 }
-
-
-
 
 .show400 {
   display: none;
@@ -48,6 +50,7 @@ padding: 5px 10px;
   display: inline;
 }
 }
+
 
 
 // .content-site{

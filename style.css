@@ -20,6 +20,10 @@ h1, h2, h3 {
 p {
   font-family: "Hind Medium", sans-serif; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+
 button {
   border: none; }
 
@@ -238,7 +242,8 @@ button {
       left: 50%;
       -webkit-transform: translateY(0%) translateX(-50%) rotate(0deg);
       -ms-transform: translateY(0%) translateX(-50%) rotate(0deg);
-      transform: translateY(0%) translateX(-50%) rotate(0deg); }
+      transform: translateY(0%) translateX(-50%) rotate(0deg);
+      height: 5px; }
     .top-header .burger > div:nth-child(2) {
       top: 50%;
       left: 50%;
@@ -360,34 +365,18 @@ nav {
     margin-bottom: 15px;
     font-family: "Hind Medium", sans-serif;
     color: #707070; }
-    nav > button span {
+    nav > button a {
       position: relative; }
-    nav > button span::before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background-color: #1479B6;
-      -webkit-transform-origin: bottom right;
-      -ms-transform-origin: bottom right;
-      transform-origin: bottom right;
-      -webkit-transform: scaleX(0);
-      -ms-transform: scaleX(0);
-      transform: scaleX(0);
-      -webkit-transition: -webkit-transform 0.5s ease;
-      transition: -webkit-transform 0.5s ease;
-      -o-transition: transform 0.5s ease;
-      transition: transform 0.5s ease;
-      transition: transform 0.5s ease, -webkit-transform 0.5s ease; }
-    nav > button span:hover::before {
-      -webkit-transform-origin: bottom left;
-      -ms-transform-origin: bottom left;
-      transform-origin: bottom left;
-      -webkit-transform: scaleX(1);
-      -ms-transform: scaleX(1);
-      transform: scaleX(1); }
+      @media screen and (min-width: 992px) {
+        nav > button a {
+          padding-bottom: 23px; } }
+      nav > button a.under {
+        border-bottom: 5px solid #1479B6; }
+        @media screen and (min-width: 992px) {
+          nav > button a.under {
+            padding-bottom: 18px; } }
+      nav > button a:hover {
+        color: #1479B6; }
     @media screen and (min-width: 992px) {
       nav > button {
         width: 160px;
@@ -590,14 +579,14 @@ header {
       padding: 20px 0;
       font-size: 20px;
       font-family: "Hind Medium", sans-serif; }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 992px) {
         .section2 .content-section > div:last-of-type h3 {
           text-align: left; } }
     .section2 .content-section > div:last-of-type ul {
       font-family: "Hind Medium", sans-serif;
       font-size: 16px;
       list-style: none; }
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 875px) {
         .section2 .content-section > div:last-of-type ul {
           text-align: left;
           list-style: disc; } }
