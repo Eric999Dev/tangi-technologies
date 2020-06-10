@@ -14,7 +14,9 @@ Version: 1.0.0
 body {
   overflow-x: hidden; }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "SysTT Bold", sans-serif; }
 
 p {
@@ -43,6 +45,56 @@ button {
 @media screen and (min-width: 400px) {
   .show400 {
     display: inline; } }
+
+#button {
+  display: inline-block;
+  background-color: #1479B6;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: -20px;
+  -webkit-transition: background-color .3s;
+  -o-transition: background-color .3s;
+  transition: background-color .3s;
+  z-index: 1000; }
+
+#button:hover {
+  cursor: pointer;
+  background-color: #333; }
+
+#button:active {
+  background-color: #555; }
+
+#button::after {
+  content: "\f102";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff; }
+
+#button {
+  -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
+  -o-transition: background-color .3s, opacity .5s, visibility .5s;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden; }
+
+#button {
+  -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
+  -o-transition: background-color .3s, opacity .5s, visibility .5s;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden; }
+
+#button.show {
+  opacity: 1;
+  visibility: visible; }
 
 .masque {
   position: fixed;
@@ -498,7 +550,8 @@ header {
 
 @media screen and (min-width: 992px) {
   .section2 {
-    background-position: center 30%; } }
+    background-position: center 30%;
+    padding: 80px 0; } }
 
 .section2 .content-section {
   max-width: 1315px;

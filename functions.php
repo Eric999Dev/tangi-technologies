@@ -146,6 +146,9 @@ function themebynens_scripts() {
 	wp_enqueue_style('themebynens-slick-theme-css', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css');
 
 	wp_enqueue_style('themebynens-slick-css', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css');
+
+	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
+
 	wp_enqueue_style( 'themebynens-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'themebynens-style', 'rtl', 'replace' );
 	// Déclarer jQuery
