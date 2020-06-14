@@ -109,14 +109,14 @@ button {
   .masque .modal {
     max-width: 640px;
     width: 100%;
-    height: 725px;
+    height: auto;
     padding: 30px 20px;
     position: absolute;
-    top: 45%;
+    top: 55%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -30%);
+    -ms-transform: translate(-50%, -30%);
+    transform: translate(-50%, -30%);
     background-image: url("./images/formulaire/formulaire.png");
     background-size: cover;
     background-position: left;
@@ -126,98 +126,45 @@ button {
       .masque .modal {
         background-image: url("./images/section-2/digital-bis-desk.png");
         background-position: 20% center;
-        max-width: 90%; } }
+        max-width: 90%;
+        top: 50%; } }
     .masque .modal .close {
       text-align: right;
       color: white;
       font-weight: bold;
       cursor: pointer;
-      font-size: 30px; }
+      font-size: 30px;
+      width: 40px; }
       .masque .modal .close img {
         width: 30px; }
     .masque .modal h2 {
       text-align: center;
       margin-bottom: 30px; }
-    @media screen and (min-width: 992px) {
-      .masque .modal .wrap-form {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-        flex-flow: row nowrap;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -webkit-box-align: start;
-        -ms-flex-align: start;
-        align-items: flex-start;
-        max-width: 1180px;
-        margin: 0 auto; }
-        .masque .modal .wrap-form > div {
-          margin: 0 auto; } }
-    .masque .modal form {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap;
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
-      -webkit-box-align: end;
-      -ms-flex-align: end;
-      align-items: flex-end;
-      font-family: "Hind Medium", sans-serif; }
+    .masque .modal .wrap-form {
+      height: auto;
+      margin: 0 0 0 auto; }
+      .masque .modal .wrap-form .hbspt-form {
+        width: 100%; }
+      .masque .modal .wrap-form iframe,
+      .masque .modal .wrap-form .hs-form-iframe {
+        width: 80% !important;
+        min-width: 250px !important;
+        max-width: 600px !important;
+        margin: 0 0 0 auto; }
+        @media screen and (min-width: 992px) {
+          .masque .modal .wrap-form iframe,
+          .masque .modal .wrap-form .hs-form-iframe {
+            max-width: 800px !important; } }
+        .masque .modal .wrap-form iframe body,
+        .masque .modal .wrap-form .hs-form-iframe body {
+          width: 100%; }
+      .masque .modal .wrap-form label {
+        color: white; }
       @media screen and (min-width: 992px) {
-        .masque .modal form {
-          width: 50%; } }
-      .masque .modal form > div {
-        margin: 0 auto 30px; }
-        @media screen and (min-width: 992px) {
-          .masque .modal form > div {
-            margin: 0 15% 30px; } }
-      .masque .modal form input {
-        display: inline-block;
-        max-width: 420px;
-        height: 30px;
-        border-radius: 8px;
-        margin-bottom: 20px;
-        width: 80%;
-        padding-left: 15px;
-        font-family: "Hind Medium", sans-serif;
-        font-size: 13px;
-        border: none; }
-        .masque .modal form input::-webkit-input-placeholder {
-          font-family: "Hind Light", sans-serif;
-          font-size: 13px;
-          color: #707070;
-          opacity: 1; }
-        .masque .modal form input:-ms-input-placeholder {
-          font-family: "Hind Light", sans-serif;
-          font-size: 13px;
-          color: #707070;
-          opacity: 1; }
-        .masque .modal form input::-ms-input-placeholder {
-          font-family: "Hind Light", sans-serif;
-          font-size: 13px;
-          color: #707070;
-          opacity: 1; }
-        .masque .modal form input::placeholder {
-          font-family: "Hind Light", sans-serif;
-          font-size: 13px;
-          color: #707070;
-          opacity: 1; }
-      .masque .modal form input[type=submit] {
-        width: 150px;
-        color: white;
-        margin-top: 35px; }
-        @media screen and (min-width: 992px) {
-          .masque .modal form input[type=submit] {
-            margin: 35px 20% 20px; } }
+        .masque .modal .wrap-form {
+          max-width: 1180px; }
+          .masque .modal .wrap-form > div {
+            margin: 0 auto; } }
 
 .closeModal {
   display: none; }
