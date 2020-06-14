@@ -486,7 +486,6 @@ header {
         margin-left: 0; } }
 
 .section1 .content-section {
-  max-width: 1150px;
   margin: 0 auto; }
   @media screen and (min-width: 768px) {
     .section1 .content-section {
@@ -542,8 +541,7 @@ header {
 
 @media screen and (min-width: 992px) {
   .section2 {
-    background-position: center 30%;
-    padding: 80px 0; } }
+    background-position: center 30%; } }
 
 .section2 .content-section {
   max-width: 100%;
@@ -584,9 +582,15 @@ header {
       color: white;
       font-size: 20px;
       padding-bottom: 70%; }
+      @media screen and (min-width: 520px) {
+        .section2 .content-section div p {
+          padding-bottom: 450px; } }
+      @media screen and (min-width: 675px) {
+        .section2 .content-section div p {
+          padding-bottom: 550px; } }
       @media screen and (min-width: 875px) {
         .section2 .content-section div p {
-          padding-bottom: 0%;
+          padding-bottom: 405px;
           font-size: 25px; } }
   .section2 .content-section > div:first-of-type {
     background-image: url("./images/section-2/digital-bis.png");
@@ -603,8 +607,17 @@ header {
     @media screen and (min-width: 992px) {
       .section2 .content-section > div:first-of-type {
         margin: 0;
-        height: 550px;
+        height: 630px;
         padding: 20px 0; } }
+    @media screen and (min-width: 1200px) {
+      .section2 .content-section > div:first-of-type {
+        height: 700px; } }
+    @media screen and (min-width: 1515px) {
+      .section2 .content-section > div:first-of-type {
+        height: 735px;
+        padding: 0; } }
+    .section2 .content-section > div:first-of-type h2 {
+      padding: 30px 0 15px; }
   .section2 .content-section > div:last-of-type {
     background-image: url("./images/section-2/digital-back.png");
     background-size: cover;
@@ -612,18 +625,26 @@ header {
     padding: 30px 15px; }
     @media screen and (min-width: 875px) {
       .section2 .content-section > div:last-of-type {
-        width: 40%;
+        width: 50%;
         padding: 0;
         padding-left: 90px; } }
     @media screen and (min-width: 992px) {
       .section2 .content-section > div:last-of-type {
+        padding-top: 40px;
         width: 50%;
-        height: 530px; } }
+        height: 630px; } }
+    @media screen and (min-width: 1200px) {
+      .section2 .content-section > div:last-of-type {
+        height: 700px;
+        padding-top: 97px; } }
+    @media screen and (min-width: 1515px) {
+      .section2 .content-section > div:last-of-type {
+        height: 735px; } }
     .section2 .content-section > div:last-of-type h3 {
       padding: 20px 0;
       font-size: 20px;
       font-family: "Hind Medium", sans-serif; }
-      @media screen and (min-width: 992px) {
+      @media screen and (min-width: 875px) {
         .section2 .content-section > div:last-of-type h3 {
           text-align: left; } }
     .section2 .content-section > div:last-of-type ul {

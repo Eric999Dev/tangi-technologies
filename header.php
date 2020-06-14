@@ -51,7 +51,8 @@
 				<div>
 					<h2>Des exeperiences clients sur mesure</h2>
 				</div>
-				<form action="" method="post">
+				<?php echo do_shortcode('[hubspot type=form portal=7888949 id=26bec327-1ba9-448e-b485-f3d6be025f92]');?>
+				<!-- <form action="" method="post">
 					<div class="entete-form">Remplissez le formulaire ci-dessous,<br> nous vous recontacterons au plus vite</div>
 
 					<input type="text" id="firstname" name="firstname" placeholder="Prenom">
@@ -64,11 +65,12 @@
 					<input type="text" id="country" name="country" placeholder="Pays">
 					<input type="submit" name="validForm" id="validForm" value="ENVOYER" class="btn">
 
-				</form>
+				</form> -->
 			</div>
 
 
 		</div>
+
 	</div>
 
 	<?php wp_body_open(); ?>
