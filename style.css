@@ -540,21 +540,13 @@ header {
     height: 45px;
     line-height: 45px; }
 
-@media screen and (min-width: 875px) {
-  .section2 {
-    background-image: url("./images/section-2/digital-bis-desk.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: -67px center;
-    padding: 30px 0; } }
-
 @media screen and (min-width: 992px) {
   .section2 {
     background-position: center 30%;
     padding: 80px 0; } }
 
 .section2 .content-section {
-  max-width: 1315px;
+  max-width: 100%;
   margin: 0 auto; }
   @media screen and (min-width: 875px) {
     .section2 .content-section {
@@ -603,31 +595,30 @@ header {
     background-position: center;
     max-width: 100%;
     min-height: 320px;
-    max-height: 565px;
     width: 100%;
     position: relative; }
     @media screen and (min-width: 875px) {
       .section2 .content-section > div:first-of-type {
-        background-image: none;
         width: 50%; } }
     @media screen and (min-width: 992px) {
       .section2 .content-section > div:first-of-type {
-        margin: 0; } }
+        margin: 0;
+        height: 550px;
+        padding: 20px 0; } }
   .section2 .content-section > div:last-of-type {
-    background-image: url("./images/section-2/degrade.png");
+    background-image: url("./images/section-2/digital-back.png");
     background-size: cover;
     color: white;
     padding: 30px 15px; }
     @media screen and (min-width: 875px) {
       .section2 .content-section > div:last-of-type {
-        background-image: none;
         width: 40%;
         padding: 0;
         padding-left: 90px; } }
     @media screen and (min-width: 992px) {
       .section2 .content-section > div:last-of-type {
-        background-image: none;
-        width: 35%; } }
+        width: 50%;
+        height: 530px; } }
     .section2 .content-section > div:last-of-type h3 {
       padding: 20px 0;
       font-size: 20px;
