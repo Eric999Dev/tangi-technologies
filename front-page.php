@@ -10,8 +10,11 @@ get_header();
 
     </div>
     <div>
-      <p>Nous sommes les créateurs de l'Afrique digitale de <strong>demain</strong> grâces&nbsp;aux&nbsp;technologies.</p> <br>
-      <p>Notre ambition est d'accélérer <strong>votre transformation digitale</strong> quelques soit la taille ou le secteur d'activité de votre entreprise.</p><br>
+<h2>Qui sommes-nous ?</h2>
+      <p>Nous sommes les créateurs de l'<strong>Afrique digitale de demain</strong> grâces&nbsp;aux&nbsp;technologies.</p> <br>
+      <h2>Notre ambition</h2>
+      <p>Accélérer <strong>votre transformation digitale</strong> quelques <br> soit la taille ou le secteur d'activité de votre entreprise. <br><br>Créer un <strong>écosystème</strong> digital africain</p><br>
+
       <div class="btn" data-form="modal">Je découvre l'agence digital</div>
     </div>
   </div>

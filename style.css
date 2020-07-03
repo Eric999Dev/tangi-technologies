@@ -112,7 +112,7 @@ button {
     height: auto;
     padding: 30px 20px;
     position: absolute;
-    top: 55%;
+    top: 70%;
     left: 50%;
     -webkit-transform: translate(-50%, -30%);
     -ms-transform: translate(-50%, -30%);
@@ -433,7 +433,21 @@ header {
         margin-left: 0; } }
 
 .section1 .content-section {
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-flow: column-reverse nowrap;
+  flex-flow: column-reverse nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   @media screen and (min-width: 768px) {
     .section1 .content-section {
       display: -webkit-box;
@@ -449,8 +463,15 @@ header {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; } }
+  .section1 .content-section h2 {
+    color: #707070;
+    padding: 0px 0px 20px;
+    font-size: 30px;
+    text-align: center; }
+    @media screen and (min-width: 875px) {
+      .section1 .content-section h2 {
+        font-size: 40px; } }
   .section1 .content-section div {
-    margin: 0 auto;
     padding: 0 15px;
     text-align: center;
     width: 100%; }
@@ -473,9 +494,10 @@ header {
   .section1 .content-section > div:last-of-type {
     margin: 0 auto; }
     .section1 .content-section > div:last-of-type p {
-      max-width: 600px;
-      width: 100%;
-      margin: 0 auto; }
+      width: 100%; }
+      @media screen and (max-width: 875px) {
+        .section1 .content-section > div:last-of-type p {
+          margin: 0 auto; } }
     @media screen and (min-width: 992px) {
       .section1 .content-section > div:last-of-type {
         width: 60%;
@@ -528,7 +550,7 @@ header {
     .section2 .content-section div p {
       color: white;
       font-size: 20px;
-      padding-bottom: 70%; }
+      padding-bottom: 95%; }
       @media screen and (min-width: 520px) {
         .section2 .content-section div p {
           padding-bottom: 450px; } }

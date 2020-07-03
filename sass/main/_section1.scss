@@ -2,6 +2,11 @@
   .content-section {
     // max-width: 1150px;
     margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: space-between;
+    align-items: center;
 
     @media screen and(min-width:768px) {
       display: flex;
@@ -10,11 +15,26 @@
       align-items: center;
     }
 
+    h2 {
+      color: $gris;
+      padding: 0px 0px 20px;
+      font-size: 30px;
+      text-align: center;
+
+
+      @media screen and(min-width:875px) {
+
+        font-size: 40px;
+      }
+
+    }
+
     div {
-      margin: 0 auto;
+
       padding: 0 15px;
       text-align: center;
       width: 100%;
+
 
       p {
         color: $gris;
@@ -44,9 +64,12 @@
       margin: 0 auto;
 
       p {
-        max-width: 600px;
+        // max-width: 600px;
         width: 100%;
-        margin: 0 auto;
+
+        @media screen and(max-width:875px) {
+          margin: 0 auto;
+        }
       }
 
       @media screen and(min-width:992px) {
