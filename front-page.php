@@ -65,7 +65,7 @@ get_header();
   <div class="content-section">
     <h2 id="tarif">Nos tarifs</h2>
     <div class="wrap-prix">
-      <div class="vignette-prix" data-form="modal">
+      <div class="vignette-prix">
         <img src="<?php echo get_template_directory_uri(); ?>/images/section-3/medal_1.svg" alt="médaille">
         <h3>Pack Starter</h3>
         <p>Logo</p>
@@ -73,15 +73,15 @@ get_header();
         <p><strong>Prix : 348 $</strong></p>
         <a class="btn" data-form="modal">J'achète</a>
       </div>
-      <div class="vignette-prix" data-form="modal">
+      <div class="vignette-prix">
         <img src="<?php echo get_template_directory_uri(); ?>/images/section-3/medal_2.svg" alt="médaille">
         <h3>Pack Medium</h3>
         <p>Pack stater</p>
         <p>Charte graphique</p>
         <p><strong>Prix : 1044 $</strong></p>
-        <a class="btn" data-form="modal">J'achète</a>
+        <a class="btn">J'achète</a>
       </div>
-      <div class="vignette-prix" data-form="modal">
+      <div class="vignette-prix">
         <img src="<?php echo get_template_directory_uri(); ?>/images/section-3/medal_3.svg" alt="médaille">
         <h3>Pack Professionel</h3>
         <p>Pack medium</p>
@@ -90,26 +90,26 @@ get_header();
         <p>Plaquette commerciale</p>
         <p>Infographie</p>
         <p><strong>Prix : 1624 $</strong></p>
-        <a class="btn" data-form="modal">J'achète</a>
+        <a class="btn">J'achète</a>
       </div>
-      <div class="vignette-prix" data-form="modal">
+      <div class="vignette-prix">
         <img src="<?php echo get_template_directory_uri(); ?>/images/section-3/medal_4.svg" alt="médaille">
         <h3>Pack Premium</h3>
         <p>Pack pro</p>
         <p>Sites web/application mobile <br> (Wireframe, prototype <br>& développement)</p> <br>
-        <a class="btn" data-form="modal">Je veux un devis</a>
+        <a class="btn">Je veux un devis</a>
       </div>
-      <div class="vignette-prix" data-form="modal">
+      <div class="vignette-prix">
         <img src="<?php echo get_template_directory_uri(); ?>/images/section-3/medal_5.svg" alt="médaille">
         <h3>Pack Personnalisé</h3>
         <p>Sur devis</p>
-        <a class="btn" data-form="modal">Je veux un devis</a>
+        <a class="btn">Je veux un devis</a>
       </div>
     </div>
   </div>
 </section>
 
-<section>
+<section class="section-formulaire">
 	<div class="wrap-form">
 				<div>
 					<h2>Des exeperiences clients sur mesure</h2>
