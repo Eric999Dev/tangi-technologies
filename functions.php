@@ -211,3 +211,42 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+/**
+ * Search for a page with a particular template. (Fonction pour lien de page)
+ *
+ * @param string $template Template filename.
+ * @param array $args (Optional) See also get_posts() for example parameter usage.
+ * @param bool $single (Optional) Whether to return a single value.
+ *
+ * @return Will be an array of WP_Post if $single is false. Will be a WP_Post object if the page is find, FALSE otherwise
+ */
+if (!function_exists('get_page_by_template')) {
+    function get_page_by_template($template, $args = array(), $single = true)
+    {
+        $pages_by_template = wp_cache_get('pages_by_template', 'cyrale');
+        if (empty($pages_by_template) || !is_array($pages_by_template)) {
+            $pages_by_template = array();
+        }
+        if (!isset($pages_by_template[$template])) {
+            $args = wp_parse_args(array(
+                'posts_per_page' => -1,
+                'post_type' => 'page',
+                'suppress_filters' => 0,
+                'meta_query' => array(
+                    array(
+                        'key' => '_wp_page_template',
+                        'value' => $template,
+                    ),
+                ),
+            ), $args);
+            $pages = get_posts($args);
+            $pages_by_template[$template] = array(
+                'single' => !empty($pages) && is_array($pages) ? reset($pages) : false,
+                'pages' => $pages,
+            );
+        }
+        wp_cache_set('pages_by_template', $pages_by_template, 'cyrale');
+        return $pages_by_template[$template][$single ? 'single' : 'pages']->ID;
+    }
+}

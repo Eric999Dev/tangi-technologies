@@ -93,6 +93,15 @@ $(document).ready(function () {
       $('.accueil>a').removeClass('under')
     })
 
+  $('.btn-agence').click(function () {
+    $('html, body').animate(
+      {
+        scrollTop: $('#agence').offset().top,
+      },
+      1000
+    )
+  })
+
   // Modal Formulaire
   $('[data-form]').click(function () {
     $('.masque').show()

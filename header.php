@@ -41,41 +41,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div class="masque">
-
-		<div class="modal">
-			<div class="close">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/formulaire/cancel.svg" alt="">
-			</div>
-			<div class="wrap-form">
-				<div>
-					<h2>Des exeperiences clients sur mesure</h2>
-				</div>
-<div>
-					<h2>Remplissez le formulaire ci-dessous, <br> nous vous recontacterons au plus vite</h2>
-
-				<?php echo do_shortcode('[hubspot type=form portal=7888949 id=26bec327-1ba9-448e-b485-f3d6be025f92]');?>
-				<!-- <form action="" method="post">
-					<div class="entete-form">Remplissez le formulaire ci-dessous,<br> nous vous recontacterons au plus vite</div>
-
-					<input type="text" id="firstname" name="firstname" placeholder="Prenom">
-					<input type="text" id="lastname" name="lastname" placeholder="Nom">
-					<input type="text" id="fonction" name="fonction" placeholder="Fonction">
-					<input type="email" id="email" name="email" placeholder="E-mail">
-					<input type="tel" id="phone" name="phone" placeholder="Téléphone">
-					<input type="text" id="firm" name="firm" placeholder="Société">
-					<input type="text" id="employe" name="employe" placeholder="Nombre d'employés">
-					<input type="text" id="country" name="country" placeholder="Pays">
-					<input type="submit" name="validForm" id="validForm" value="ENVOYER" class="btn">
-
-				</form> -->
-				</div>
-			</div>
-
-
-		</div>
-
-	</div>
 
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
@@ -84,7 +49,7 @@
 
 			</div>
 
-			<button class="btn" data-form="modal"><span class="show400">Je veux un </span>devis</button>
+			<a href="<?php echo get_permalink(get_page_by_template('contact.php'));?>" class="btn" ><span class="show400">Je veux un </span>devis</a>
 
 
 			<div class="wrap-nav">
@@ -92,7 +57,7 @@
 					<button class="accueil" data-scroll="accueil"><a href="#accueil">Accueil</a></button>
 					<button data-scroll="agence" class="agence"><a href="#agence">Agence digitale</a></button>
 					<button data-scroll="tarif" class="tarif"><a href="#tarif">Nos tarifs</a></button>
-				</nav>
+
 			</div>
 
 
@@ -103,9 +68,12 @@
 			</div>
 
 		</div>
+		<?php if(is_home() || is_front_page()){?>
 		<header>
 			<div class="content-header">
-				<h1>Nous créons l'Afrique digital de demain</h1>
+				<h1>Nous créons l'Afrique digitale de demain</h1>
+				<div class="btn btn-agence">Je découvre l'agence digitale</div>
 			</div>
 
 		</header>
+		<?php }?>

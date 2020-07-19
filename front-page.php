@@ -11,11 +11,11 @@ get_header();
     </div>
     <div>
 <h2>Qui sommes-nous ?</h2>
-      <p>Nous sommes les créateurs de l'<strong>Afrique digitale de demain</strong> grâces&nbsp;aux&nbsp;technologies.</p> <br>
+      <p>Nous sommes les créateurs de l'<strong>Afrique digitale de demain</strong> grâce&nbsp;aux&nbsp;technologies.</p> <br>
       <h2>Notre ambition</h2>
       <p>Accélérer <strong>votre transformation digitale</strong> quelques <br> soit la taille ou le secteur d'activité de votre entreprise. <br><br>Créer un <strong>écosystème</strong> digital africain</p><br>
 
-      <div class="btn" data-form="modal">Je découvre l'agence digital</div>
+
     </div>
   </div>
 
@@ -107,6 +107,19 @@ get_header();
       </div>
     </div>
   </div>
+</section>
+
+<section>
+	<div class="wrap-form">
+				<div>
+					<h2>Des exeperiences clients sur mesure</h2>
+				</div>
+						<div>
+						<h2>Remplissez le formulaire ci-dessous, <br> nous vous recontacterons au plus vite</h2>
+<?php echo do_shortcode('[hubspot type=form portal=7888949 id=26bec327-1ba9-448e-b485-f3d6be025f92]');?>
+
+				</div>
+			</div>
 </section>
 
 <?php
