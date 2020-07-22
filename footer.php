@@ -37,9 +37,9 @@
 			<div class="bottom-footer">
 				<div class="titre-rs">Suivez-nous sur : </div>
 				<div>
-					<img src="<?php echo get_template_directory_uri(); ?>/images/icones/social_facebook_circle.svg" alt="">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/icones/social_twitter_circle.svg" alt="">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/icones/instagram_icon.svg" alt="">
+					<a href="https://www.facebook.com/search/top/?q=tangi%20technologies&epa=SEARCH_BOX" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/icones/social_facebook_circle.svg" alt="logo Facebook"></a>
+					<a href="https://twitter.com/TANGITechnolog2" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/icones/social_twitter_circle.svg" alt="Logo Twitter"></a>
+					<a href="https://www.instagram.com/tangi.tech/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/icones/instagram_icon.svg" alt="Logo Instagram"></a>
 				</div>
 			</div>
 			</>

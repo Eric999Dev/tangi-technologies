@@ -62,17 +62,20 @@
 
 .section-formulaire {
   background-image: url('./images/formulaire/formulaire.png');
-
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
   color: white;
+  padding: 80px 0px;
 
   @media screen and(min-width:992px) {
-    background-image: url('./images/section-2/digital-bis-desk.png');
+    // background-image: url('./images/section-2/digital-bis-desk.png');
+    background-image: url('./images/formulaire/formulaire.png');
     background-position: 20% center;
     top: 50%;
   }
+
+
 }
 
 .wrap-form {
@@ -81,21 +84,48 @@
   // max-width: 640px;
   width: 100%;
   height: auto;
-  padding: 30px 20px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 
+  h2 {
+    margin: 0 auto 35px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 25px;
+    margin-bottom: 70px;
+  }
+
+  .form-display {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @media screen and(max-width:1024px) {
+      justify-content: center;
+
+      img {
+        display: none;
+      }
+    }
+  }
+
   // overflow-y: scroll;
 
   .hbspt-form {
     width: 100%;
+    max-width: 600px;
   }
 
   iframe,
   .hs-form-iframe {
-    width: 80% !important;
+    width: 100% !important;
     min-width: 250px !important;
     max-width: 600px !important;
     margin: 0 0 0 auto;
@@ -115,9 +145,9 @@
 
 
   @media screen and(min-width:992px) {
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    // flex-flow: row nowrap;
+    // justify-content: space-between;
+    // align-items: flex-start;
     max-width: 1180px;
     margin: 0 auto;
 
@@ -125,4 +155,10 @@
     //   margin: 0 auto;
     // }
   }
+
+
+}
+
+.hubspot-link__container .sproket {
+  display: none !important;
 }

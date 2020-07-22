@@ -71,7 +71,7 @@ get_header();
         <p>Logo</p>
         <p>Cartes de visite</p>
         <p><strong>Prix : 348 $</strong></p>
-        <a class="btn" data-form="modal">J'achète</a>
+        <a class="btn" data-form="modal">Je profite de l'offre</a>
       </div>
       <div class="vignette-prix">
         <img src="<?php echo get_template_directory_uri(); ?>/images/section-3/medal_2.svg" alt="médaille">
@@ -79,7 +79,7 @@ get_header();
         <p>Pack stater</p>
         <p>Charte graphique</p>
         <p><strong>Prix : 1044 $</strong></p>
-        <a class="btn">J'achète</a>
+        <a class="btn">Je profite de l'offre</a>
       </div>
       <div class="vignette-prix">
         <img src="<?php echo get_template_directory_uri(); ?>/images/section-3/medal_3.svg" alt="médaille">
@@ -90,7 +90,7 @@ get_header();
         <p>Plaquette commerciale</p>
         <p>Infographie</p>
         <p><strong>Prix : 1624 $</strong></p>
-        <a class="btn">J'achète</a>
+        <a class="btn">Je profite de l'offre</a>
       </div>
       <div class="vignette-prix">
         <img src="<?php echo get_template_directory_uri(); ?>/images/section-3/medal_4.svg" alt="médaille">
@@ -111,14 +111,13 @@ get_header();
 
 <section class="section-formulaire">
 	<div class="wrap-form">
-				<div>
-					<h2>Des exeperiences clients sur mesure</h2>
-				</div>
-						<div>
-						<h2>Remplissez le formulaire ci-dessous, <br> nous vous recontacterons au plus vite</h2>
-<?php echo do_shortcode('[hubspot type=form portal=7888949 id=26bec327-1ba9-448e-b485-f3d6be025f92]');?>
+    <h2>Des exeperiences clients sur mesure</h2>
+    <h3>Remplissez le formulaire ci-dessous, <br> nous vous recontacterons au plus vite</h3>
+				<div class="form-display">
+<img src="<?php echo get_template_directory_uri(); ?>/images/section-3/" alt="" >
 
-				</div>
+<?php echo do_shortcode('[hubspot type=form portal=7888949 id=26bec327-1ba9-448e-b485-f3d6be025f92]');?>
+	</div>
 			</div>
 </section>
 
